@@ -14,6 +14,44 @@ module.exports = {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
     },
+    extend: {
+      colors: {
+        spotify: "#1ed760",
+      },
+      animation: {
+        "login-fade-in": "login-fade-in 450ms ease-in",
+        "login-pulse": "login-pulse 2000ms infinite",
+      },
+      keyframes: {
+        "login-fade-in": {
+          from: {
+            opacity: 0,
+            transform: "scale(1.1)",
+          },
+          to: {
+            opacity: 1,
+            transform: "scale(1)",
+          },
+        },
+        "login-pulse": {
+          "0%": {
+            transform: "scale(0.95)",
+            boxShadow: "0 0 0 0 rgba(29, 185, 84, 0.7)",
+          },
+          "50%": {
+            opacity: 0.85,
+          },
+          "70%": {
+            transform: "scale(1)",
+            boxShadow: "0 0 0 15px rgba(29, 185, 84, 0)",
+          },
+          "100%": {
+            transform: "scale(0.95)",
+            boxShadow: "0 0 0 0 rgba(29, 185, 84, 0)",
+          },
+        },
+      },
+    },
   },
   plugins: [],
 };
