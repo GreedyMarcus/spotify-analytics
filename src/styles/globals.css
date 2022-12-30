@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Carter One";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Carter One"), url("/fonts/CarterOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Roboto"), url("/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@layer base {
+  html {
+    @apply overflow-hidden xxl:text-xl;
+  }
+
+  html,
+  body {
+    @apply m-0 h-full p-0 font-roboto text-slate-900;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  #__next {
+    @apply h-full;
+  }
+}
