@@ -18,6 +18,20 @@ nvm install
 npm run generate:env
 ```
 
+**3. Setup a Spotify account**
+
+This application is using the **Spotify Web API** under the hood, therefore you must create a Spotify user account (Premius or Free) to use it. To do that, simply sign up at [www.spotify.com](www.spotify.com).
+
+When you have a user account, go to the [Dashboard](https://developer.spotify.com/dashboard) page at the **Spotify Developer** website and, if necessary, log in. Accept the latest [Developer Terms of Service](https://developer.spotify.com/terms) to complete your account setup.
+
+**4. Register this application**
+
+The next step is to register this application following [these steps](https://developer.spotify.com/documentation/general/guides/authorization/app-settings/).
+
+**5. Provide credentials**
+
+The last step is to provide the necessary `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` variables in the generated `.env` file.
+
 ### Installation
 
 **1. Install all dependencies**

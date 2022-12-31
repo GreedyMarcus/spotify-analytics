@@ -1,4 +1,5 @@
-import { clsx } from "clsx";
+import { GetServerSideProps } from "next";
+import { getSession, signIn } from "next-auth/react";
 import SpotifyLogo from "@svgs/spotify-logo.svg";
 import { Page } from "@components/Page";
 
@@ -13,7 +14,10 @@ export default function Login() {
               Analytics
             </span>
           </div>
-          <button className="animate-login-pulse select-none rounded-2xl bg-spotify py-2.5 px-7 text-xl font-semibold">
+          <button
+            className="animate-login-pulse select-none rounded-2xl bg-spotify py-2.5 px-7 text-xl font-semibold"
+            onClick={() => signIn("spotify")}
+          >
             Sign in to Spotify
           </button>
         </div>
@@ -21,3 +25,11 @@ export default function Login() {
     </Page>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const session = await getSession(context);
+  return {
+    redirect: session ? { destination: "/" } : undefined,
+    props: {},
+  };
+};
