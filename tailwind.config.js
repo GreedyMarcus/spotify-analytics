@@ -14,6 +14,9 @@ module.exports = {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
     },
+    zIndex: {
+      dropdown: 2500,
+    },
     extend: {
       colors: {
         spotify: "#1ed760",
@@ -21,6 +24,7 @@ module.exports = {
       animation: {
         "login-fade-in": "login-fade-in 450ms ease-in",
         "login-pulse": "login-pulse 2000ms infinite",
+        "fade-in": "fade-in 200ms ease-in",
       },
       keyframes: {
         "login-fade-in": {
@@ -49,6 +53,10 @@ module.exports = {
             transform: "scale(0.95)",
             boxShadow: "0 0 0 0 rgba(29, 185, 84, 0)",
           },
+        },
+        "fade-in": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
         },
       },
     },

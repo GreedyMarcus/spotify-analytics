@@ -6,6 +6,9 @@ const path = require("path");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ["platform-lookaside.fbsbx.com", "i.scdn.co"],
+  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,

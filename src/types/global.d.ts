@@ -6,6 +6,11 @@ declare global {
       SPOTIFY_CLIENT_SECRET: string;
     }
   }
+
+  interface Position {
+    x: number;
+    y: number;
+  }
 }
 
 export {};
