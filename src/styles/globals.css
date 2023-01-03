@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Carter One";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Carter One"), url("/fonts/CarterOne-Regular.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -43,6 +36,12 @@
 
   #__next {
     @apply h-full;
+  }
+}
+
+@layer components {
+  .main-layout {
+    @apply flex h-full flex-col bg-gradient-to-b from-slate-700 to-slate-800;
   }
 }
 

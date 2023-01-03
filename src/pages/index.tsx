@@ -1,11 +1,14 @@
 import { GetServerSideProps } from "next";
 import { getSession } from "next-auth/react";
+import { Header } from "@components/Header";
 import { Page } from "@components/Page";
 
 export default function Index() {
   return (
     <Page title="Dashboard">
-      <h1>DASHBOARD</h1>
+      <main className="main-layout">
+        <Header />
+      </main>
     </Page>
   );
 }
