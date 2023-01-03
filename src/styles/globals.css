@@ -49,4 +49,15 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
+
+  /* For IE, Edge and Firefox */
+  .hidden-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }

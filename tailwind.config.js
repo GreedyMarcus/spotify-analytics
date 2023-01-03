@@ -15,7 +15,8 @@ module.exports = {
       roboto: ["Roboto", "sans-serif"],
     },
     zIndex: {
-      dropdown: 2500,
+      dropdown: 10,
+      header: 20,
     },
     extend: {
       colors: {

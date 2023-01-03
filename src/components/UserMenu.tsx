@@ -23,7 +23,7 @@ export const UserMenu = () => {
         </button>
       }
       isOpen={isOpen}
-      width="w-36"
+      width="w-44"
       placement="bottom-start"
       offset={{ y: 20 }}
       onClose={() => setIsOpen(false)}

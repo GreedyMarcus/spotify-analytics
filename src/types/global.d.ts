@@ -7,6 +7,10 @@ declare global {
     }
   }
 
+  namespace Spotify {
+    type TimeRange = "short_term" | "medium_term" | "long_term";
+  }
+
   interface Position {
     x: number;
     y: number;
