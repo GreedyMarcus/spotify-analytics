@@ -9,6 +9,13 @@ declare global {
 
   namespace Spotify {
     type TimeRange = "short_term" | "medium_term" | "long_term";
+
+    interface RefreshedAccessTokenResponse {
+      access_token: string;
+      token_type: string;
+      expires_in: number;
+      scope: string;
+    }
   }
 
   interface Position {

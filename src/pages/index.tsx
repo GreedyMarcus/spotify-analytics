@@ -24,7 +24,7 @@ export default function Index() {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const session = await getSession(context);
   return {
-    redirect: !session ? { destination: "/login" } : undefined,
+    redirect: !session || session.error ? { destination: "/login" } : undefined,
     props: {},
   };
 };
