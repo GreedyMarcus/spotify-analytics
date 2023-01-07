@@ -18,6 +18,8 @@ declare global {
     }
   }
 
+  type Dictionary<T> = Record<string, T>;
+
   interface Position {
     x: number;
     y: number;
