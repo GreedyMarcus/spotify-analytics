@@ -60,4 +60,8 @@
   .hidden-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+  .overflow-faded {
+    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, transparent 100%);
+  }
 }

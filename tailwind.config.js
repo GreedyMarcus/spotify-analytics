@@ -26,6 +26,7 @@ module.exports = {
         "login-fade-in": "login-fade-in 450ms ease-in",
         "login-pulse": "login-pulse 2000ms infinite",
         "fade-in": "fade-in 200ms ease-in",
+        spin: "spin 1s linear infinite",
       },
       keyframes: {
         "login-fade-in": {
@@ -58,6 +59,10 @@ module.exports = {
         "fade-in": {
           from: { opacity: 0 },
           to: { opacity: 1 },
+        },
+        spin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
         },
       },
     },
