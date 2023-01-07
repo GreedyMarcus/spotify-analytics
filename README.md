@@ -2,6 +2,8 @@
 
 Find out who your favorite artist is, which songs you've listened to the most or which genres you like with the help of Spotify Analytics!
 
+![Preview image](public/images/preview.png)
+
 ## Motivation
 
 This project was created for educational purposes. The main goal is to get familiar with the [Spotify Web API](https://developer.spotify.com/documentation/web-api/) and see how it feels to build a responsive UI using [Tailwind CSS](https://tailwindcss.com/).
